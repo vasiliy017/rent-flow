@@ -1,95 +1,36 @@
 <template>
-  <div class="home-page">
-    <header class="hero-section">
-      <div class="container">
-        <h1 class="hero-title">
-          Find Your <span class="highlight">Dream</span> Space
+  <div class="min-h-screen flex flex-col bg-gray-950 text-gray-100 font-sans">
+    <header class="flex-1 flex flex-col items-center justify-center text-center py-20 relative overflow-hidden">
+      <!-- Background Gradients -->
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+      <UContainer class="relative z-10">
+        <h1 class="text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+          Find Your <span class="bg-gradient-to-br from-indigo-500 to-pink-500 bg-clip-text text-transparent">Dream</span> Space
         </h1>
-        <p class="hero-subtitle">
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
           Experience the future of real estate. Premium properties for premium lives.
         </p>
-        <div class="hero-actions">
-          <button class="btn btn-primary">Explore Listings</button>
-          <button class="btn btn-secondary">About Us</button>
+        <div class="flex gap-4 justify-center">
+          <UButton 
+            size="xl" 
+            color="primary" 
+            variant="solid" 
+            class="rounded-full px-8 py-4 font-semibold shadow-[0_4px_20px_-5px_rgba(99,102,241,0.5)] hover:-translate-y-0.5 transition-transform"
+          >
+            Explore Listings
+          </UButton>
+          <UButton 
+            size="xl" 
+            color="white" 
+            variant="ghost" 
+            class="rounded-full px-8 py-4 font-semibold hover:bg-white/10"
+          >
+            About Us
+          </UButton>
         </div>
-      </div>
+      </UContainer>
     </header>
   </div>
 </template>
-
-<style scoped>
-.home-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 0;
-  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%),
-              radial-gradient(circle at bottom left, rgba(244, 114, 182, 0.1), transparent 40%);
-}
-
-.hero-title {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-}
-
-.highlight {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--color-text-secondary);
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  line-height: 1.6;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.btn {
-  padding: 0.75rem 2rem;
-  border-radius: var(--radius-full);
-  font-weight: 600;
-  transition: all 0.2s ease;
-  border: none;
-  font-size: 1rem;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: white;
-  box-shadow: 0 4px 20px -5px rgba(99, 102, 241, 0.5);
-}
-
-.btn-primary:hover {
-  background: var(--color-primary-hover);
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: rgba(255,255,255,0.05);
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-border);
-}
-
-.btn-secondary:hover {
-  background: rgba(255,255,255,0.1);
-}
-</style>
