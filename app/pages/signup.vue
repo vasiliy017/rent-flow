@@ -78,21 +78,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0C4D94] text-white py-8 mt-auto">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-center gap-8 mb-6">
-          <UButton icon="i-mdi-instagram" variant="ghost" color="white" class="hover:text-blue-200" />
-          <UButton icon="i-mdi-telegram" variant="ghost" color="white" class="hover:text-blue-200" />
-          <UButton icon="i-mdi-email-outline" variant="ghost" color="white" class="hover:text-blue-200" />
-          <UButton icon="i-mdi-whatsapp" variant="ghost" color="white" class="hover:text-blue-200" />
-          <UButton icon="i-mdi-facebook" variant="ghost" color="white" class="hover:text-blue-200" />
-        </div>
-        <div class="text-center text-sm text-blue-100 flex items-center justify-center gap-4">
-          <span>Rentflow.com</span>
-          <span>2025</span>
-        </div>
-      </div>
-    </footer>
+    <AppFooter />
   </div>
 </template>
 
